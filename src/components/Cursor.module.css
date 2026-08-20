@@ -1,0 +1,23 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(36, 87, 255, 0.95);
+  mix-blend-mode: screen;
+  transition: transform 0.18s ease, width 0.2s ease, height 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+  z-index: 9999;
+  opacity: 0.9;
+}
+
+.cursor[data-active='true'] {
+  width: 46px;
+  height: 46px;
+  background: rgba(36, 87, 255, 0.18);
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) { .cursor { display: none; } }

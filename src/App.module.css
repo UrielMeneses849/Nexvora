@@ -1,0 +1,10 @@
+.app {
+  min-height: 100vh;
+  background: #050505;
+  position: relative;
+  overflow-x: clip;
+}
+
+.main {
+  width: 100%;
+}
